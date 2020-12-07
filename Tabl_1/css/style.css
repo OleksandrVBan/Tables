@@ -1,0 +1,95 @@
+/* *{
+    box-sizing: border-box;
+}
+div {
+    border: 0px solid;
+} */
+/* Щоб розмістити контент по центру викор:  
+margin: 0 auto;  */
+ 
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grey {
+    background-color: lightgreen;
+    margin-top: 5px ;
+    border: 2px solid grey;
+}
+.circle {
+    background-color: aquamarine;
+    border: 2px solid rebeccapurple;
+    border-radius: 50%;
+    padding: 30px;
+    margin-top: 5px;
+}
+
+.left {
+    background-color: aquamarine;
+    border: 2px solid red;
+    min-height: 200px;
+    min-width: 600px;
+}
+.right {
+    background-color: indianred;
+    border: 2px solid yellow;
+    min-height: 280px;
+    min-width: 480px;
+}
+
+@media screen and (max-width:1200px) {
+    .grey {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 50px;
+        }
+    .circle {
+        order: -1;
+        border-radius: 30%;
+        max-width: 25%;
+        min-width: 25%;
+        min-height: 50px;
+        }
+    .left {
+        flex-basis: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 50px;
+    }
+    .right {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 50px;
+    }
+} 
+
+@media screen and (max-width:470px) {
+    .grey {
+        max-width: 10%;
+        min-width: 10%;
+        min-height: 10px;
+        }
+    .circle {
+        order: -1;
+        border-radius: 10%;
+        max-width: 15%;
+        min-width: 15%;
+        min-height: 25px;
+        }
+    .left {
+        flex-basis: 100%;
+        max-width: 50%;
+        min-width: 50%;
+        min-height: 100px;
+    }
+    .right {
+        max-width: 50%;
+        min-width: 50%;
+        min-height: 100px;
+        max-height: 100px;
+    }
+} 

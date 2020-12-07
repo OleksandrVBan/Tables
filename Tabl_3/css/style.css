@@ -1,0 +1,124 @@
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grey {
+    background-color: lightgreen;
+    margin-top: 5px ;
+    border: 2px solid grey;
+    min-width: 90%;
+    max-height: 45px;
+}
+.circle {
+    min-width: 100px ;
+    min-height: 100px ;
+    background-color: aquamarine;
+    border: 2px solid rebeccapurple;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 85px; 
+}
+.right {
+    background-color: lightblue;
+    min-width: 670px;
+}
+.big_first {
+    background-color: lightpink;
+    min-width: 450px;
+    max-width: 450px;
+    height: 175px;
+    border: 1px solid grey;
+} 
+.big_second {
+    background-color: lightpink;
+    min-width: 450px;
+    max-width: 450px;
+    height: 175px;
+    border: 1px solid grey;
+}
+.small_first {
+    background-color: lightblue;
+    min-width: 220px;
+    max-width: 220px;
+    height: 175px;
+    border: 1px solid grey;
+} 
+.small_second {
+    background-color: lightblue;
+    min-width: 220px;
+    max-width: 220px;
+    height: 175px;
+    border: 1px solid grey;
+}
+
+ @media screen and (max-width:1000px) {
+    .grey {
+        max-width: 250px;
+        min-width: 250px;
+        min-height: 30px;
+        max-height: 30px;
+        }
+    .circle {
+        border-radius: 0%;
+        max-width: 250px;
+        min-width: 250px;
+        min-height: 15px;
+        max-height: 15px;
+        margin-left: 0px;
+        }
+    .right {
+        background-color: white;
+        min-width: 300px;
+        max-width: 300px;
+        margin-left: 50px;
+    }
+    .big_first {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 30px;
+        max-height: 30px;
+        } 
+    .big_second {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 30px;
+        max-height: 30px;
+        order: -1;
+        }
+    .small_first {
+        max-width: 100%;;
+        min-width: 100%;;
+        min-height: 30px;
+        max-height: 30px;
+        } 
+    .small_second {
+        max-width: 100%;;
+        min-width: 100%;;
+        min-height: 30px;
+        max-height: 30px;
+        }
+} 
+
+
+@media screen and (max-width:700px) {
+    .grey {
+        max-width: 100px;
+        min-width: 100px;
+        min-height: 30px;
+        max-height: 30px;
+        }
+    .circle {
+        border-radius: 0%;
+        max-width: 100px;
+        min-width: 100px;
+        min-height: 10px;
+        max-height: 10px;
+        margin-left: 0px;
+        }
+} 
